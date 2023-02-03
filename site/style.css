@@ -1,8 +1,23 @@
-h1 {
+.top-body {
 	background-color: #E1EEF4;
-	color: blue;
+	color: black;
+	font-family: Century Gothic;
+	text-align: center;
+	height: 208px;
 }
-div.header {
+
+h1 {
+	padding-top: 40px;
+	padding-bottom: 0;
+	font-size: 70px;
+}
+
+.top-body-span {
+	margin-top:-2%;
+	color: gray;
+}
+
+.header {
 	width: 100%;
 }
 
@@ -26,7 +41,7 @@ a.menu:hover{
 }
 
 a.special_menu:hover{
-	background-color: skyblue;
+	background-color: #E1EEF4;
 	border-radius: 50%;
 	width: 34px;
   	height: 34px;
@@ -36,7 +51,7 @@ a.special_menu:hover{
 }
 
 a.special_menu {
-	background-color: skyblue;
+	background-color: #E1EEF4;
 	border-radius: 50%;
 	width: 34px;
   	height: 34px;
@@ -56,16 +71,57 @@ button.menu{
 }
 
 button.menu:hover{
-	background-color: gray;
-	color: white;
+	background-color: #E1EEF4;
+	color: black;
 }
 
-div.logo {
+.logo {
 	margin: 2%;
 }
 
-img.page-logo {
+.page-logo {
 	height: 83px;
 	width: 219px;
 	margin: 2%;
+}
+
+.body1 {
+	width: 1198px;
+	height: 576px;
+	padding: 50px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.middle-body {
+	width: 874px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.buttonbody {
+	background-color: white;
+	font-size: 14px;
+	font-family: Century Gothic;
+	width: 165px;
+	height: 53px;
+}
+
+.buttonbody:hover{
+	background-color: #E1EEF4;
+	color: black;
+}
+
+h2 {
+	font-size: 52px;
+	font-family: Century Gothic;
+}
+
+.h2-paragraph {
+	font-size: 15px;
+	font-family: Century Gothic;
+	margin-top: -3%;
+	margin-bottom: 3%;
 }
