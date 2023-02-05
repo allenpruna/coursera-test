@@ -1,179 +1,101 @@
-.top-body {
-	background-color: #E1EEF4;
-	color: black;
-	font-family: Century Gothic;
-	text-align: center;
-	height: 208px;
-}
 
-h1 {
-	padding-top: 40px;
-	padding-bottom: 0;
-	font-size: 70px;
-}
-
-.top-body-span {
-	margin-top:-2%;
-	color: gray;
-}
-.bottompart-body {
-	background-color: #E1EEF4;
-	color: red;
+.acosta__header {
 	font-family: Century Gothic;
-	text-align: center;
-	height: 606px;
-	font-size: 40px;
 	display: flex;
-    align-items: center;
-    justify-content: center
+	align-content: center;
+	justify-content: space-between;
+	padding: 2rem 5rem;
 }
 
-
-.header {
-	width: 100%;
+.acosta__header-menu {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-div.menu {
-	text-align: right;
+.acosta__header-menu a, 
+.acosta__header-menu button {
+	margin: 0 2rem;
+	cursor: pointer;
+	letter-spacing: 1.4px;
+	color: #000000;
 	font-size: 14px;
-	margin-top: -4.5%;
-	padding-left: 52px;
-}
-
-a.menu {
-	padding: 42px;
 	text-decoration: none;
-	color: black;
-	font-family: Century Gothic;
+	transition: color 0.1s, background-color 0.1s;
+
 }
 
-a.menu:hover{
-	border-bottom: 2.5px solid black;
-	padding-bottom: 5px;
+.acosta__header-menu a {
+	position: relative;
+    padding: 16px 0;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000; 
+}
+	
+
+.acosta__header-menu a:hover {
+	color: #999;
+    text-decoration: none;
 }
 
-a.special_menu:hover{
-	background-color: #E1EEF4;
-	border-radius: 50%;
-	width: 34px;
-  	height: 34px;
-  	padding: 15px;
-  	font-weight: bold;
-  	text-decoration: underline;
+.acosta__header-menu a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
 }
 
-a.special_menu {
-	background-color: #E1EEF4;
-	border-radius: 50%;
-	width: 34px;
-  	height: 34px;
-  	padding: 15px;
-  	font-weight: bold;
-  	text-decoration: underline;
+.acosta__header-menu a:active::before {
+    background-color: #000;
 }
-
-button.menu{
-	background-color: white;
-	font-size: 14px;
-	font-family: Century Gothic;
-	width: 165px;
-	height: 53px;
-	margin-left: 42px;
-	margin-right: 42px;
+.acosta__header-menu a:hover::before, .acosta__header-menu a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
 }
-
-button.menu:hover{
-	background-color: #E1EEF4;
-	color: black;
-}
-
-.logo {
-	margin: 2%;
-}
-
-.page-logo {
-	height: 83px;
-	width: 219px;
-	margin: 2%;
-}
-
-.body1 {
-	width: 1198px;
-	height: 576px;
-	padding: 50px;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-}
-
-.middle-body {
-	width: 874px;
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-}
-
-.buttonbody {
-	background-color: white;
-	font-size: 14px;
-	font-family: Century Gothic;
-	width: 165px;
-	height: 53px;
-}
-
-.buttonbody:hover{
-	background-color: #E1EEF4;
-	color: black;
-}
-
-h2 {
-	font-size: 52px;
-	font-family: Century Gothic;
-}
-
-.h2-paragraph {
-	font-size: 15px;
-	font-family: Century Gothic;
-	margin-top: -3%;
-	margin-bottom: 3%;
-}
-
-.h3-paragraph {
-	font-size: 15px;
-	font-family: Century Gothic;
-}
-
-.h3-body {
-	margin-left: 17%;
-	background-color: #E1EEF4;
-	height: 400px;
-	text-align: justify;
-	padding:40px;
-	margin-right:40px;
-	width: 577px;
-}
-
-.bottom-body {
+.acosta__header-specialmenu {
 	display: flex;
-    align-items: center;
-    justify-content: center
-
+	align-items: center;
 }
 
-.h3-img {
-	margin-right:17%;
+.acosta__header-specialmenu a {
+	width: 2.5rem;
+    line-height: 2rem;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #E1EEF4;
+	font-size: 14px;
+	text-decoration: underline;
+	text-align: center;
+	padding: .65rem .5rem;
+	border: 1px solid #FFFFFF;
 }
 
-.body2 {
-   	width: 577px;
-	height: 480px;
+.acosta__header-specialmenu a:hover {
+	border: 1px solid #89CFF0;
 }
 
-h3 {
-	font-size: 40px;
-	font-family: Century Gothic;
+
+.acosta__header-menu button {
+	padding: 1.25rem 2.5rem;
+	background-color: #FFFFFF;
+}
+.acosta__header-menu button:hover {
+	background-color: #E1EEF4;
+	border-color: #89CFF0;
 }
 
-.under-body {
-
+.acosta__logo img {
+	width: 219px;
+	height: 83px;
 }
